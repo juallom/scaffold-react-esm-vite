@@ -1,13 +1,14 @@
 {
   "name": "scaffold-react-swc",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "scaffold-react-swc",
   "type": "module",
+  "module": "dist/main.mjs",
   "scripts": {
     "dev": "rspack serve",
     "build": "rspack build",
-    "lint": "biome check --apply ."
+    "lint": "biome check --apply .",
+    "test": "vitest"
   },
   "author": "",
   "license": "ISC",
@@ -21,10 +22,14 @@
     "@rspack/core": "^0.6.5",
     "@rspack/plugin-react-refresh": "^0.6.5",
     "@swc/helpers": "^0.5.11",
+    "@testing-library/react": "^15.0.7",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "jsdom": "^24.0.0",
     "lefthook": "^1.6.11",
     "react-refresh": "^0.14.2",
+    "typescript": "^5.4.5",
     "vitest": "^1.6.0"
   }
 }
