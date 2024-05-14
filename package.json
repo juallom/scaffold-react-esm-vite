@@ -1,7 +1,7 @@
 {
   "name": "scaffold-react-esm-vite",
   "version": "1.0.0",
-  "description": "scaffold-react-esm-rspack-vitest",
+  "description": "scaffold-react-esm-vite",
   "type": "module",
   "main": "dist/index-6TyY8yAK.js",
   "scripts": {
