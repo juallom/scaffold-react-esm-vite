@@ -1,7 +1,7 @@
 {
   "name": "scaffold-react-esm-rspack-vitest",
   "version": "1.0.0",
-  "description": "scaffold-react-swc",
+  "description": "scaffold-react-esm-rspack-vitest",
   "type": "module",
   "module": "dist/main.mjs",
   "scripts": {
@@ -10,7 +10,7 @@
     "lint": "biome check --apply .",
     "test": "vitest"
   },
-  "author": "",
+  "author": "Joan Lloret <juallom@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "react": "^18.3.1",
