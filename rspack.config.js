@@ -8,8 +8,8 @@ export default {
   target: 'es2020',
   output: {
     module: true,
-    // chunkFormat: 'module',
-    // chunkLoading: 'import',
+    chunkFormat: 'module',
+    chunkLoading: 'import',
     library: {
       type: 'module',
     },
@@ -30,7 +30,7 @@ export default {
     rules: [
       ...[true, false].map((isJsx) => {
         return {
-          test: isJsx ? /\.tsx$/ : /\.ts$/,
+          test: isJsx ? /\.tsx$/i : /\.ts$/i,
           use: {
             loader: 'builtin:swc-loader',
             options: {
@@ -62,7 +62,14 @@ export default {
         };
       }),
       {
-        test: /\.(png|svg|jpg)$/,
+        test: /\.svg$/i,
+        use: ['@svgr/webpack', 'url-loader'],
+        options: {
+          babel: false,
+        },
+      },
+      {
+        test: /\.(png|jpg)$/i,
         type: 'asset/resource',
       },
     ],

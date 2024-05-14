@@ -10,6 +10,8 @@ describe('<App />', () => {
   it('should render correctly', () => {
     expect(
       screen.getByRole('heading', { level: 1, name: 'scaffold-react-swc' }),
-    ).toBeDefined();
+    ).toBeInTheDocument();
+    expect(screen.getByRole('img')).toBeInTheDocument();
+    expect(screen.getByRole('img').getAttribute('src')).toMatch(/.svg$/i);
   });
 });

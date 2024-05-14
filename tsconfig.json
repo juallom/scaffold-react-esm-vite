@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es2020",
+    "lib": ["dom", "dom.iterable", "es2020"],
     "jsx": "react-jsx",
-    "module": "es2020",
+    "module": "esnext",
     "rootDir": "./src",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
@@ -16,8 +16,8 @@
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals", "@testing-library/jest-dom/vitest"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "declarations.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
