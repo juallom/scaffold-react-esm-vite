@@ -14,7 +14,5 @@ describe('<App />', () => {
         name: 'scaffold-react-esm-rspack-vitest',
       }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('img')).toBeInTheDocument();
-    expect(screen.getByRole('img').getAttribute('src')).toMatch(/.svg$/i);
   });
 });
