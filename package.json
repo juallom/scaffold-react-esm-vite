@@ -34,7 +34,7 @@
     "react-refresh": "^0.16.0",
     "rimraf": "^6.0.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.11",
+    "vite": "^6.0.0",
     "vite-plugin-checker": "^0.8.0",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^5.0.0",
