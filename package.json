@@ -6,7 +6,7 @@
   "main": "dist/index-6TyY8yAK.js",
   "engines": {
     "node": "^22.0.0",
-    "npm": "^10.5.x"
+    "npm": "^11.0.0"
   },
   "scripts": {
     "dev": "vite",
